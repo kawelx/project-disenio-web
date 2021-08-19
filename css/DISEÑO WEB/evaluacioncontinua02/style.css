@@ -1,0 +1,43 @@
+#principal {
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+}
+
+.rs{
+    width: 100%;
+    height: 29%;
+}
+
+
+.rs ul {
+    list-style: none;
+    cursor: point;
+}
+
+.rs ul li {
+    float: right;
+    margin-top:-15px;
+    margin-inline-end: 2px;
+}
+
+.rs ul li :hover {
+    cursor: pointer;
+}
+
+.logo{
+    width: 100%;
+    height: 30%;
+}
+
+
+#menunav{
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    margin: 5px 0 0 0;
+    padding: 10px 0 5px 80px;
+    box-sizing: border-box;
+    background-color: #1e33f0de;
+}
+

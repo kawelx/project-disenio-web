@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion08</title>
+</head>
+<body>
+    <h1>Elementos Multimedia</h1>
+    <!-- audio -->
+    <!-- extensiones soportadas: mp3, ogg, wav, aac, opus -->
+    <audio src="/audio/alexander-nakandra.mp3#t=10" controls loop></audio>
+    <!-- #t=numero es para que el reproductor inicie desde el tiempo indicado
+     -->
+
+    <!-- forma antigua, se debia especificar el tipo de audio por compatibilidad -->
+    <!-- controls hace que aparesca el reproductor en la pagina -->
+    <audio controls> <!-- autoplay es para que el reproducto inicie apenas cargue la pagina -->
+        <!-- loop hace que cuando termne el audio de reproducirse, vuelva al inicio de nuevo y empiece -->
+        <source src="/audio/alexander-nakandra.mp3" type="audio/mpeg">
+        <source src="/audio/alexander-nakandra.ogg" type="audio/ogg">
+        <source src="/audio/alexander-nakandra.wav" type="audio/wav">
+    </audio>
+
+    <!-- video -->
+    <video src="/video/video.mp4" controls poster="/images/DISEÑO WEB/sesionn08/2.jpg" width="500px" height="400px"></video>
+    
+</body>
+</html>

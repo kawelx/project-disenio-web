@@ -1,0 +1,6 @@
+.video-youtube {
+    width: 80%;
+    margin: 0 auto; /* con esta sentencia movemos al centro el div */
+    text-align: center;
+    border: 1px solid;
+}

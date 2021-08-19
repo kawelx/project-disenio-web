@@ -1,0 +1,130 @@
+.pelota {
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    background-color: cornflowerblue;
+    border-radius: 50px; /* se forma un circulo con 50px */
+    position: relative; /* por defecto, el borde se pone estatico, debemos poner la posicion relative para quitarselo */
+    /*animation-name: mover;  define el nombre de la animacion, en este caso la llamamos "mover" */
+    animation-name: ida-vuelta;
+    animation-duration: 10s; /* define el tiempo de la animacion en seg y milseg, es necesario */
+    animation-iteration-count: infinite; /* tiempo infinito */
+    box-sizing: border-box;
+}
+/* esta es la regla para mover la pelota de ida */
+@keyframes mover{
+    from {
+        left: 0;
+    }
+    to {
+        left: 95%;
+    }
+}
+
+/* toda animacion debe contener 3 parametros
+1. Un nombre
+2. Duracion
+3. Regla */
+
+
+/* aninmacion para el idea y vuelta de la pelota */
+@keyframes ida-vuelta {
+    0% {
+        left: 0;
+        opacity: 0; /* sirve para opacar la imagen, va del 0 al 1 como maximo */
+    }
+
+    25% {
+        left: 50%;
+        opacity: 0.5;
+    }
+
+    50% {
+        left: 95%;
+        opacity: 1;
+    }
+    
+    75% {
+        left: 50%;
+        opacity: 0.5;
+    }
+
+    100% {
+        left: 0;
+        opacity: 0;
+    }
+}
+
+/* 0% {      este atributo refiere al tiempo
+     left: 0; este atributo refiere al espacio
+}
+  */
+
+
+ .cuadrado{
+     width: 100px;
+     height: 100px;
+     margin-left: 20px;
+     border: 2px solid;
+     border-left-color: yellow ;
+     border-right-color: green ;
+     border-top-color:blue ;
+     border-bottom-color:red ;
+     
+     
+     /* de este modo se puede poner distintas colores a las distintas lineas */
+
+ }
+
+ .rotar {
+    transform: rotate(120deg); /* la medida de rotate debe ser de grados */
+ }
+
+ .escalar {
+     transform: scale(1.5, 1.1); /* 1.5 con respecto a X
+                                    1.1 con respecto a Y */
+ }
+
+/* X son las lineas laterales */
+/* Y son las lineas de arriba y abajo */
+
+ .sesgado {
+     /* transform: skewX(10deg); */ /* skewX o skewY mueve en grados la linea */
+
+     transform: skew(20deg, 10deg);
+
+ }
+
+ .translacion {
+     /* transform: translate(0,50px); */ /* x and y */
+     animation: trasladar 10s;
+ }
+
+ @keyframes trasladar {
+     0% {
+         transform: translate(0, 0);
+     }
+     0% {
+         transform: translate(100px,0);
+     }
+     0% {
+         transform: translate(100px, 300px);
+     }
+     100% {
+         transform: translate(0, 100px);
+     }
+     
+ }
+
+ .transicion{
+     transition: width 3s, background-color 4s, color 3s;
+     transition-timing-function: linear;
+ }
+
+ .transicion:hover{
+     width: 150px;
+     background-color: red;
+     color: white;
+ }
+ /* para que se realice el transition, se debe tener un evento previo
+ en este caso, hicimos hover para que con el cursos del mouse, se active */

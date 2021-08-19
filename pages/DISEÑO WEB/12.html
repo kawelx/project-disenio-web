@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/DISEÑO WEB/dweb12.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="" method="POST"><!-- method es la forma como viajan los datos del formulario -->
+        <!-- cuando el envio es por get, sera por url, si es por post -->
+        <h1>Registro de Cliente</h1>
+        <div class="divRow">
+            <div class="lblEtiqueta"> 
+                <label for="cbxTipoDoc">Tipo Documento</label>
+            </div><!-- El -for- hace que cada vez que clicke sobre el id ingresado el cursor rote al input -->
+            <select name="tipoDoc" id="cbxTipoDoc"><!-- etiqueta para un combo box -->
+                <option value="1">DNI</option> <!-- option es la etiqueta para las opciones dentro del combo box -->
+                <option value="2">Pasaporte</option>
+                <option value="3">Carnet de Extranjeria</option>
+                <option value="4">RUC</option>
+            </select>
+        </div>
+        
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtNroDoc">Numero Documento</label> <!-- El -for- hace que cada vez que clicke sobre el id ingresado el cursor rote al input -->
+            </div>
+            <input type="text" id="txtNroDoc" name="nroDoc" required >
+        </div>
+
+        
+        <div class=""divRow"">
+            <div class="lblEtiqueta">
+                <label for="">Tipo Cliente</label>
+            </div>
+            <input type="radio" id="" name="rbdCli"><label for="">Premium</label>&ensp;&ensp;&ensp;
+            <input type="radio" id="" name="rbdCli"><label for="">Normal</label>&ensp;&ensp;&ensp;<!-- crea espacios -->
+            <input type="radio" id="" name="rbdCli"><label for="">Basico</label>
+            <!-- para que el radio bottom marque un solo valor, es necesario ponerlos en un mismo grupo, por ejemplo en -name- -->
+        </div>
+
+        <div class=""divRow"">
+            <div class="lblEtiqueta">
+                <label for="txtNombre">Nombre</label>
+            </div>
+            <input type="text" id="txtNombre" name="nombre" required>
+        </div>
+        
+        <div>
+            <div>
+                <label for="txtNombre">Fecha Nacimiento</label>
+            </div>
+            <input type="date" id="txtFecNac" name="nombre"><!-- Calendario -date- -->
+        </div>
+        
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtFecNac">Beneficios</label>
+            </div>
+            <input type="checkbox" id="chkPromo" name="chkPromo" checked><label for="chkPromo">Promociones</label>&ensp;&ensp;&ensp;
+            <input type="checkbox" id="chkDcto" name="chkDcto"><label for="chkDcto">Descuentos</label>&ensp;&ensp;&ensp;
+            <input type="checkbox" id="chkExoIgv" name="chkExoIgv"><label for="chkExoIgv">Exonerado IGV</label>&ensp;&ensp;&ensp;
+        </div>
+
+        <div class=""divRow"">
+            <div class="lblEtiqueta">
+                <label for="txtCorreo">Correo Electronico</label>
+            </div>
+            <input type="email" id="txtCorreo" name="correo">
+        </div>
+
+
+
+        <div class="divRow">
+            <input type="submit" value="Registrar"><!-- con esto se coloca un boton -->
+            <!-- submit va a refrescar la pagina -->
+        </div>
+
+
+
+    </form>
+    
+</body>
+</html>

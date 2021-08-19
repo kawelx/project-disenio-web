@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/semana12.css">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="/registrarCliente.php" method="POST">
+        <h1>Registro de Cliente</h1>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="cbxTipoDoc">Tipo Documento</label>
+            </div>
+            <select name="tipoDoc" id="cbxTipoDoc">
+                <option value="1">DNI</option>
+                <option value="2">Pasaporte</option>
+                <option value="3">Carnet de Extranjería</option>
+                <option value="4">RUC</option>
+            </select>
+        </div>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtNroDoc">Número Documento</label>
+            </div>
+            <input type="text" id="txtNroDoc" name="nroDoc" required placeholder="Ingrese número documento" maxlength="8">
+        </div>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="">Tipo Cliente</label>
+            </div>
+            <input type="radio" id="" name="rdbTipCli"><label for="">Premium</label>&ensp;&ensp;&ensp;
+            <input type="radio" id="" name="rdbTipCli"><label for="">Normal</label>&ensp;&ensp;&ensp;
+            <input type="radio" id="" name="rdbTipCli"><label for="">Básico</label>
+        </div>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtNombre">Nombre</label>
+            </div>
+            <input type="text" id="txtNombre" name="nombre" required>
+        </div>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtFecNac">Fecha Nacimiento</label>
+            </div>
+            <input type="date" id="txtFecNac" name="fecNac" title="Usar formato dd/mm/yyyy">
+        </div>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtFecNac">Beneficios</label>
+            </div>
+            <input type="checkbox" id="chkPromo" name="chkPromo" checked disabled><label for="chkPromo">Promociones</label>&ensp;&ensp;&ensp;
+            <input type="checkbox" id="chkDcto" name="chkDcto" checked><label for="chkDcto">Descuentos</label>&ensp;&ensp;&ensp;
+            <input type="checkbox" id="chkExoIgv" name="chkExoIgv"><label for="chkExoIgv">Exonerado IGV</label>
+        </div>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtCorreo">Correo Electrónico</label>
+            </div>
+            <input type="email" id="txtCorreo" name="correo" placeholder="Ingrese correo" readonly value="cliente@abc.com">
+        </div>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtPassword">Contraseña</label>
+            </div>
+            <input type="password" id="txtPassword" name="correo" placeholder="Ingrese contraseña">
+        </div>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtCantVtas">Cantidad Ventas</label>
+            </div>
+            <input type="number" id="txtCantVtas" name="cantVtas" min="4" max="10" step="2" required>
+        </div>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtCantVtas">Teléfono</label>
+            </div>
+            <input type="tel" id="txtTel" name="telefono" required pattern="000">
+        </div>
+        <div class="divRow">
+            <div class="lblEtiqueta">
+                <label for="txtComentario">Comentarios</label>
+            </div>
+            <textarea name="comentario" id="" cols="50" rows="10"></textarea>
+        </div>
+        <div class="divRow">
+            <input type="submit" value="Registrar">
+        </div>
+    </form>
+</body>
+
+</html>

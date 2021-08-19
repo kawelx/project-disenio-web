@@ -1,0 +1,20 @@
+.image {
+    border: 1px dashed blue;
+    width: 33%;
+    height: 300px;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.imagen1 {
+    border: 2px solid red;
+    border-radius: 10px;
+    
+}
+
+.imagen3 {
+    border: 2px solid red;
+    border-radius: 10px;
+    padding-top: 10px;
+}
