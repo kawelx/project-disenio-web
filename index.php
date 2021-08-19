@@ -8,6 +8,6 @@
 
 <script>
 
-    window.location = "index.html";
+    window.location = "pages/DISEÑO WEB/evaluacioncontinua02/principal.html";
 
 </script>
