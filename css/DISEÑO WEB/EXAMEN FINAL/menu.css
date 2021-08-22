@@ -10,7 +10,7 @@
 
 .menu li{
     float: left;
-    background-color:black;
+    background-color:blue;
     color: white;
     padding: 10px 25px;
     margin-top: -21px;
@@ -24,15 +24,13 @@
     text-decoration: none;
 }
 
-.menu li:hover { /* hover es una animacion que sucede encima del texto
-    cuando el cursor del mouse pasa sobre el */
-    background-color:#1e33f0de;
+.menu li:hover {
+    background-color:#14cfb0de;
     cursor: pointer;
 }
 
 .menu li:hover .sub-menu{
-    display: block; /* Sirve que se muestre cuando se
-    pase el cursor del mouse sobre él */ 
+    display: block;
 }
 
 .menu .li-submenu:hover{
@@ -41,7 +39,7 @@
 
 .sub-menu{
     list-style: none;
-    display: none; /* Sirve para no mostrar(none)*/
+    display: none; 
     padding: 0;
     margin-top: 10px;
     margin-left: -35px;
@@ -49,13 +47,13 @@
 }
 
 .sub-menu li {
-    clear: left; /* Pone en vertical la lista */
+    clear: left;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 .sub-menu li:hover{
-    background-color:#1e33f0de;
+    background: color #000;
     font-weight: bold;
 }
 
